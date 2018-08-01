@@ -3,7 +3,7 @@ package com.openwallet.core.coins;
 import com.openwallet.core.coins.families.PeerFamily;
 
 /**
- * @author John L. Jegutanis
+ * @author Sean Beecroft
  */
 public class PlaceholderMain extends PeerFamily {
     private PlaceholderMain() {
