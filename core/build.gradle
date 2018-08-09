@@ -30,6 +30,7 @@ dependencies {
     testCompile 'com.squareup.okhttp:mockwebserver:2.3.0'
 }
 
+/*
 sourceSets {
     unitTest {
         java.srcDir file('src/test/java')
@@ -46,3 +47,4 @@ task unitTest(type:Test, dependsOn: assemble) {
 
 // bind to check
 check.dependsOn unitTest
+*/

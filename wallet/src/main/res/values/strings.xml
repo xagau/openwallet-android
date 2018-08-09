@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">OpenWallet (dev)</string>
-    <string name="app_package" translatable="false">com.openwallet.wallet.dev</string>
+    <string name="app_name" translatable="false">OpenWallet [Placeh:0.12]</string>
+    <string name="app_package" translatable="false">com.openwallet.wallet</string>
     <string name="openwallet_website" translatable="false">https://openwallet.xyz</string>
     <string name="almost_equal_to" translatable="false">≈</string>
     <string name="action_scan_qr_code">Scan</string>

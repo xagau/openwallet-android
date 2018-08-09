@@ -37,6 +37,7 @@ import com.openwallet.core.coins.NxtMain;
 import com.openwallet.core.coins.OKCashMain;
 import com.openwallet.core.coins.ParkbyteMain;
 import com.openwallet.core.coins.PeercoinMain;
+import com.openwallet.core.coins.PlaceholderMain;
 import com.openwallet.core.coins.PotcoinMain;
 import com.openwallet.core.coins.ReddcoinMain;
 import com.openwallet.core.coins.RubycoinMain;
@@ -130,6 +131,8 @@ public class Constants {
     public static final List<CoinAddress> DEFAULT_COINS_SERVERS = ImmutableList.of(
             new CoinAddress(BitcoinMain.get(),      new ServerAddress("btc-cce-1.coinomi.net", 5001),
                                                     new ServerAddress("btc-cce-2.coinomi.net", 5001)),
+            new CoinAddress(PlaceholderMain.get(),      new ServerAddress("68.169.61.69", 50001),
+                                                        new ServerAddress("68.169.61.69", 50002)),
             new CoinAddress(BitcoinTest.get(),      new ServerAddress("btc-testnet-cce-1.coinomi.net", 15001),
                                                     new ServerAddress("btc-testnet-cce-2.coinomi.net", 15001)),
             new CoinAddress(DogecoinMain.get(),     new ServerAddress("doge-cce-1.coinomi.net", 5003),
@@ -222,6 +225,7 @@ public class Constants {
     static {
         COINS_ICONS = new HashMap<>();
         COINS_ICONS.put(CoinID.BITCOIN_MAIN.getCoinType(), R.drawable.bitcoin);
+        COINS_ICONS.put(CoinID.PLACEH_MAIN.getCoinType(), R.drawable.placeh);
         COINS_ICONS.put(CoinID.BITCOIN_TEST.getCoinType(), R.drawable.bitcoin_test);
         COINS_ICONS.put(CoinID.DOGECOIN_MAIN.getCoinType(), R.drawable.dogecoin);
         COINS_ICONS.put(CoinID.DOGECOIN_TEST.getCoinType(), R.drawable.dogecoin_test);
@@ -267,6 +271,7 @@ public class Constants {
 
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_MAIN.getCoinType(), "https://blockchain.info/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.PLACEH_MAIN.getCoinType(), "http://explore.placeh.io:8080/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_TEST.getCoinType(), "https://chain.so/tx/BTCTEST/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.DOGECOIN_MAIN.getCoinType(), "https://chain.so/tx/DOGE/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.DOGECOIN_TEST.getCoinType(), "https://chain.so/tx/DOGETEST/%s");
@@ -318,6 +323,7 @@ public class Constants {
 
     public static final List<CoinType> SUPPORTED_COINS = ImmutableList.of(
             BitcoinMain.get(),
+            PlaceholderMain.get(),
             AsiacoinMain.get(),
             AuroracoinMain.get(),
             BatacoinMain.get(),
