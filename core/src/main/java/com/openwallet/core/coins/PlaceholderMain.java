@@ -20,7 +20,7 @@ public class PlaceholderMain extends BitFamily {
         name = "Placeh";
         symbol = "PHL";
         uriScheme = "placeh";
-        bip44Index = 1200;
+        bip44Index = 1990;
         unitExponent = 8;
         feeValue = value(10000); // 0.0001 PHL
         minNonDust = value(1);
