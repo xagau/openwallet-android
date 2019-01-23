@@ -131,8 +131,8 @@ public class Constants {
     public static final List<CoinAddress> DEFAULT_COINS_SERVERS = ImmutableList.of(
             new CoinAddress(BitcoinMain.get(),      new ServerAddress("btc-cce-1.coinomi.net", 5001),
                                                     new ServerAddress("btc-cce-2.coinomi.net", 5001)),
-            new CoinAddress(PlaceholderMain.get(),      new ServerAddress("68.169.61.69", 50001),
-                                                        new ServerAddress("68.169.61.69", 50002)),
+            new CoinAddress(PlaceholderMain.get(),      new ServerAddress("23.254.211.237", 50001),
+                                                        new ServerAddress("23.254.211.237", 50002)),
             new CoinAddress(BitcoinTest.get(),      new ServerAddress("btc-testnet-cce-1.coinomi.net", 15001),
                                                     new ServerAddress("btc-testnet-cce-2.coinomi.net", 15001)),
             new CoinAddress(DogecoinMain.get(),     new ServerAddress("doge-cce-1.coinomi.net", 5003),
