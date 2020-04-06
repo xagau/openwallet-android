@@ -133,8 +133,8 @@ public class Constants {
                                                     new ServerAddress("btc-cce-2.coinomi.net", 5001)),
             new CoinAddress(PlaceholderMain.get(),      new ServerAddress("173.255.119.66", 8080),
                                                         new ServerAddress("173.255.119.66", 8081),
-                                                        new ServerAddress("electrum.placeh.io", 8080),
-                                                        new ServerAddress("electrum.placeh.io", 8081),
+                                                        //new ServerAddress("electrum.placeh.io", 8080),
+                                                        //new ServerAddress("electrum.placeh.io", 8081),
                                                         new ServerAddress("electrum-fo-0.placeh.io", 8080),
                                                         new ServerAddress("electrum-fo-0.placeh.io", 8081),
                                                         new ServerAddress("23.254.211.237", 50001),
@@ -278,7 +278,7 @@ public class Constants {
 
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_MAIN.getCoinType(), "https://blockchain.info/tx/%s");
-        COINS_BLOCK_EXPLORERS.put(CoinID.PLACEH_MAIN.getCoinType(), "http://explore.placeh.io:8080/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.PLACEH_MAIN.getCoinType(), "https://explorer.placeh.io/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_TEST.getCoinType(), "https://chain.so/tx/BTCTEST/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.DOGECOIN_MAIN.getCoinType(), "https://chain.so/tx/DOGE/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.DOGECOIN_TEST.getCoinType(), "https://chain.so/tx/DOGETEST/%s");
