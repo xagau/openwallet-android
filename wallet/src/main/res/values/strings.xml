@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">OpenWallet [Placeh:0.12]</string>
+    <string name="app_name" translatable="false">[Placeholders:0.16]</string>
     <string name="app_package" translatable="false">com.openwallet.wallet</string>
     <string name="openwallet_website" translatable="false">https://openwallet.xyz</string>
     <string name="almost_equal_to" translatable="false">≈</string>
