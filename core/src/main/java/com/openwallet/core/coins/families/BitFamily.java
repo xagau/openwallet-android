@@ -13,6 +13,7 @@ import org.bitcoinj.core.AddressFormatException;
  * This is the classical Bitcoin family that includes Litecoin, Dogecoin, Dash, etc
  */
 public abstract class BitFamily extends CoinType {
+    private static final long serialVersionUID = -1725019768681987258L;
     {
         family = Families.BITCOIN;
     }

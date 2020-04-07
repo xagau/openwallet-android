@@ -140,11 +140,13 @@ public class StratumClient extends AbstractExecutionThreadService {
             pool.submit(new MessageHandler());
         }
         try {
+            log.info("Call createSocket()");
             socket = createSocket();
             log.info("Creating I/O streams to socket: {}", socket);
             toServer = new DataOutputStream(socket.getOutputStream());
             fromServer = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         } catch (Exception e) {
+            log.info("failed sout:" + e.getMessage());
             log.info("Unable to create socket for {}", serverAddress);
             triggerShutdown();
         }
@@ -188,6 +190,7 @@ public class StratumClient extends AbstractExecutionThreadService {
 
             BaseMessage reply;
             try {
+                System.out.println("SOUT:" + serverMessage);
                 reply = BaseMessage.fromJson(serverMessage);
             } catch (JSONException e) {
                 log.error("Server sent malformed data", e);

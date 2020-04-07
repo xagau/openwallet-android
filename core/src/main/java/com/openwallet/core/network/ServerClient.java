@@ -311,6 +311,9 @@ public class ServerClient implements BitBlockchainConnection {
     }
 
     private BlockHeader parseBlockHeader(CoinType type, JSONObject json) throws JSONException {
+        try {
+            System.out.println(json.toString());
+        } catch(Exception ex) { ex.printStackTrace(); }
         return new BlockHeader(type, json.getLong("timestamp"), json.getInt("block_height"));
     }
 

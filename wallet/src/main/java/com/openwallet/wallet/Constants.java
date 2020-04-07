@@ -129,17 +129,19 @@ public class Constants {
 
     // TODO move to resource files
     public static final List<CoinAddress> DEFAULT_COINS_SERVERS = ImmutableList.of(
-            new CoinAddress(BitcoinMain.get(),      new ServerAddress("btc-cce-1.coinomi.net", 5001),
-                                                    new ServerAddress("btc-cce-2.coinomi.net", 5001)),
-            new CoinAddress(PlaceholderMain.get(),      new ServerAddress("173.255.119.66", 8080),
-                                                        new ServerAddress("173.255.119.66", 8081),
-                                                        //new ServerAddress("electrum.placeh.io", 8080),
-                                                        //new ServerAddress("electrum.placeh.io", 8081),
-                                                        new ServerAddress("electrum-fo-0.placeh.io", 8080),
-                                                        new ServerAddress("electrum-fo-0.placeh.io", 8081),
-                                                        new ServerAddress("23.254.211.237", 50001),
-                                                        new ServerAddress("23.254.211.237", 50001)
+
+            new CoinAddress(PlaceholderMain.get(),      //new ServerAddress("electrum.placeh.io", 8081),
+                                                        new ServerAddress("173.255.119.66", 8080),
+                                                        new ServerAddress("173.255.119.66", 8081)
+                                                        //new ServerAddress("electrum.placeh.io", 8080)//new ServerAddress("173.255.119.66", 8081)
+                                                        //new ServerAddress("electrum-fo-0.placeh.io", 8080),
+                                                        //new ServerAddress("electrum-fo-0.placeh.io", 8081)
+                                                        //new ServerAddress("23.254.211.237", 50001),
+                                                        //new ServerAddress("23.254.211.237", 50001)
                             ),
+            new CoinAddress(BitcoinMain.get(),      new ServerAddress("btc-cce-1.coinomi.net", 5001),
+            new ServerAddress("btc-cce-2.coinomi.net", 5001)),
+
             new CoinAddress(BitcoinTest.get(),      new ServerAddress("btc-testnet-cce-1.coinomi.net", 15001),
                                                     new ServerAddress("btc-testnet-cce-2.coinomi.net", 15001)),
             new CoinAddress(DogecoinMain.get(),     new ServerAddress("doge-cce-1.coinomi.net", 5003),
