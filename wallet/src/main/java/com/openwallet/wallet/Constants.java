@@ -101,7 +101,7 @@ public class Constants {
 
     public static final String HTTP_CACHE_NAME = "http_cache";
     public static final int HTTP_CACHE_SIZE = 256 * 1024; // 256 KiB
-    public static final int NETWORK_TIMEOUT_MS = 15 * (int) DateUtils.SECOND_IN_MILLIS;
+    public static final int NETWORK_TIMEOUT_MS = 30 * (int) DateUtils.SECOND_IN_MILLIS;
 
     public static final String TX_CACHE_NAME = "tx_cache";
     public static final int TX_CACHE_SIZE = 5 * 1024 * 1024; // 5 MiB, TODO currently not enforced
@@ -131,9 +131,14 @@ public class Constants {
     public static final List<CoinAddress> DEFAULT_COINS_SERVERS = ImmutableList.of(
 
             new CoinAddress(PlaceholderMain.get(),      //new ServerAddress("electrum.placeh.io", 8081),
-                                                        new ServerAddress("173.255.119.66", 8080),
-                                                        new ServerAddress("173.255.119.66", 8081)
-                                                        //new ServerAddress("electrum.placeh.io", 8080)//new ServerAddress("173.255.119.66", 8081)
+                                                        new ServerAddress("104.168.234.31", 50001),
+                                                        new ServerAddress("104.168.234.31", 50002),
+                                                        new ServerAddress("cato0.easyx.cc:50001", 50001),
+                                                        new ServerAddress("electrum.placeh.io", 50001),
+                                                        new ServerAddress("electrum.placeh.io", 50002)
+
+
+    //new ServerAddress("electrum.placeh.io", 8080)//new ServerAddress("173.255.119.66", 8081)
                                                         //new ServerAddress("electrum-fo-0.placeh.io", 8080),
                                                         //new ServerAddress("electrum-fo-0.placeh.io", 8081)
                                                         //new ServerAddress("23.254.211.237", 50001),
