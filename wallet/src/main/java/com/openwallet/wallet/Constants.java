@@ -136,13 +136,6 @@ public class Constants {
                                                         new ServerAddress("cato0.easyx.cc:50001", 50001),
                                                         new ServerAddress("electrum.placeh.io", 50001),
                                                         new ServerAddress("electrum.placeh.io", 50002)
-
-
-    //new ServerAddress("electrum.placeh.io", 8080)//new ServerAddress("173.255.119.66", 8081)
-                                                        //new ServerAddress("electrum-fo-0.placeh.io", 8080),
-                                                        //new ServerAddress("electrum-fo-0.placeh.io", 8081)
-                                                        //new ServerAddress("23.254.211.237", 50001),
-                                                        //new ServerAddress("23.254.211.237", 50001)
                             ),
             new CoinAddress(BitcoinMain.get(),      new ServerAddress("btc-cce-1.coinomi.net", 5001),
             new ServerAddress("btc-cce-2.coinomi.net", 5001)),
